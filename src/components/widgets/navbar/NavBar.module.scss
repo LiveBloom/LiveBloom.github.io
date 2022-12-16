@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    font-size: 1.2rem;
+
+
+    .icon {
+        font-size: 1.8rem;
+    }
+
+    .item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+
+        padding: 0.8rem;
+
+        border-radius: 1rem;
+
+        transition: background-color 0.25s ease-in-out;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        &:active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+    
+    .pages {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .navigator {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100px;
+            height: 0.3rem;
+
+            border-radius: 0.3rem;
+
+            background-color: purple;
+            
+            transition: 0.5s ease-in-out;
+            transition-property: left, width;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
